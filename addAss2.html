@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Content\css\styles.css">
+       </head>
+<body>
+    <div class="container">
+
+<h1>
+    Enter the Numbers <input type="text" id="myText"></input>
+
+<button onclick="addSum()">Add</button>
+<button onclick="clearSum()">Clear</button><br/>
+ Total is: <span id="demo"></span>
+</h1><br/>
+<hr/>
+    </div>
+
+
+<script>
+       
+function addSum() {
+    var str,i=0,total=0; temp= new Array();
+    str = document.getElementById("myText").value;
+    temp=str.split(",");
+    if (temp>='A' && temp<='z')
+        {
+           alert("Enter Numerical Values Only");
+        document.getElementById("myText").value=null;
+        }
+    else {
+     
+        //for(i in temp)
+        for(i=0;i<temp.length;i++)
+        {                    
+     temp[i] = parseFloat(temp[i], 10);
+      total += temp[i];      
+        }
+    //console.log(temp)
+   // console.log(total);
+    document.getElementById("demo").innerHTML = total;     
+        }
+    }
+    
+function clearSum()
+    {
+        document.getElementById("myText").value=null;
+        document.getElementById("demo").innerHTML=null;
+    }
+
+</script>
+
+</body>
+</html>

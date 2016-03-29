@@ -1,0 +1,58 @@
+﻿.{
+margin: 0px;
+padding: 0px;
+}
+p{
+color: blue; font-size: 50px; font-family:"calibri";
+}
+h1{
+color: maroon; font-size: 30px; font-family:"calibri";
+}
+body
+{
+ background-color: 	#CCFF99;
+}
+span{
+color: blue; font-size: 50px; font-family:"calibri";
+}
+
+input[type="text"] {
+  margin: 10px;
+  width: 10%;
+  font-family: "verdana";
+  font-size: 18px;
+  color: blue;
+  background-color:	#FFFF66;
+
+ border: solid 3px 	#383838;
+  transition: border 10s;
+
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+button {
+  margin: 10px;
+  width: 5%;
+  font-family: "verdana";
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+hr { 
+
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+border-color: blue;
+}
